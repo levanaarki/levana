@@ -1,0 +1,151 @@
+/* CSS */
+
+body{
+  overflow: hidden;
+  margin: 0;
+}
+
+#game {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  background: url("https://cdn.dribbble.com/users/712970/screenshots/2354315/attachments/450430/wallpaper1_5.png");
+  background-size: cover;
+  overflow: hidden;
+}
+
+#ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100px;
+
+  background: url("img/floor.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+#player {
+  position: absolute;
+  bottom: 400px;
+  left: 400px;
+
+  width: 105px;
+  height: 48px;
+
+  background: url("img/plane.png");
+  background-size: contain;
+
+  transition: 2s;
+  transition-timing-function: ease-in;
+}
+
+
+.eagle {
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+
+  width: 60px;
+  height: 60px;
+
+  background: url("img/eagle.png");
+  background-size: cover;
+}
+
+.snake{
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+
+  width: 460px;
+  height: 120px;
+
+  background: url("img/snake.png");
+  background-size: contain;
+}
+
+#game-over {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  background-color: rgba(255, 0, 0, 0.219);
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-start{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  background-color: f7ca4a;
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.button{
+  background-color: #f7ca4a;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  border-width: 2px;
+  padding: 10px;
+}
+
+
+
+.fire {
+  position: absolute;
+  left: 400px;
+
+  width: 50px;
+  height: 6px;
+
+  background-color: orange;
+}
+
+#controls{
+  color: black;
+  font-family: Roboto;
+  font-size: 40px;
+
+  background-color: rgba(255, 255, 255, 0.733);
+  text-align: center;
+  width: 40vw;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+}
+
+.keyControls{
+  color: white;
+  padding: 5px;
+  border: solid;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 15px;
+}
